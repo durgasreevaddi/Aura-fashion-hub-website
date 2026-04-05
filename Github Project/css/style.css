@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Apply custom font */
+html, body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for category list but allow dragging */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Toast animations */
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(100%); opacity: 0; }
+}
+
+.toast-enter {
+    animation: slideUp 0.3s ease-out forwards;
+}
+
+.toast-exit {
+    animation: slideDown 0.3s ease-in forwards;
+}
+
+/* Base dark mode styles for smooth transition */
+html.dark {
+    color-scheme: dark;
+}
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
