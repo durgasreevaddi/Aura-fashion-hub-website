@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Premium E-Commerce</title>
+    
+    <!-- Tailwind CSS (via CDN for local no-build execution) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white dark:bg-gray-950 text-gray-900 scroll-smooth selection:bg-purple-500 selection:text-white">
+
+    <!-- Sticky Navbar Container -->
+    <div id="navbar-root"></div>
+    
+    <!-- Main SPA Containe -->
+    <main id="app-root" class="min-h-screen"></main>
+    
+    <!-- Footer Container -->
+    <div id="footer-root"></div>
+
+    <!-- AOS Animation Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Application Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/pages.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
